@@ -28,7 +28,8 @@ Caso deseje utilizar um banco de dados diferente do PostgreSQL, o SQLAlchemy per
 3. Crie um ambiente virtual (recomendado)
 4. Ative o ambiente virtual
 5. Instale as dependências: `pip install -r requirements.txt`
-6. Execute o servidor: `uvicorn main:app --reload`
+6. Execute o comando para criar as tabelas no banco de dados: `python ./models.py`
+7. Execute o servidor: `uvicorn main:app --reload`
 
 O servidor estará em execução em http://localhost:8000. 
 Você pode acessar a documentação interativa da API em http://localhost:8000/docs e testar os endpoints disponíveis.
